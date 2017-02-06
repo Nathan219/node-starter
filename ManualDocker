@@ -1,0 +1,15 @@
+FROM node:argon
+MAINTAINER Runnable, Inc.
+
+# Cache NPM Install
+COPY ["/node-starter/package.json","/app/"]
+WORKDIR /app/
+RUN npm install
+
+# Add Application Files
+COPY ["/node-starter/","/app/"]
+EXPOSE 3000
+
+# Run Application
+CMD npm test
+Contact GitHub API Training Shop Blog About
