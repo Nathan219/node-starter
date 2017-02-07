@@ -1,3 +1,4 @@
+# For creating a docker file by hand in runnable, it translates to the special syntax
 FROM node:argon
 MAINTAINER Runnable, Inc.
 
@@ -12,4 +13,3 @@ EXPOSE 3000
 
 # Run Application
 CMD npm test
-Contact GitHub API Training Shop Blog About
